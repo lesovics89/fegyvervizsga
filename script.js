@@ -2,73 +2,78 @@ const allQuestions = {
     pisztoly: [
         {
             question: "Ismertesse az öntöltő maroklőfegyver fő részeit, azok rendeltetését.",
-            options: ["Cső, Szán, Tok, Helyretoló rugó vagy szerkezet, Tár", "Cső, Elsütő billentyű, Rugó", "Markolat, Ravasz, Hüvelyvonó"],
+            options: ["Cső, Szán, Tok, Helyretoló rugó vagy szerkezet, Tár", "Csak a markolat és a tár", "A lövedék és a szán"],
             correctAnswer: "Cső, Szán, Tok, Helyretoló rugó vagy szerkezet, Tár"
         },
         {
             question: "Ismertesse a pisztolylőszerek részeit.",
-            options: ["Hüvely, Lövedék, Gyújtó", "Csak lövedék", "Ravasz, Markolat, Töltényűr"],
+            options: ["Hüvely, Lövedék, Gyújtó", "Csak a lőpor és a hüvely", "Csak a lövedék és a gyújtó"],
             correctAnswer: "Hüvely, Lövedék, Gyújtó"
         },
         {
             question: "Ismertesse a maroklőfegyver töltésének, ürítésének szabályait.",
-            options: ["Töltés közben a fegyvert a föld vagy az ég felé irányítjuk", "Csak célra tartva tölthető", "A tárat a markolatba helyezzük, majd biztosítunk"],
+            options: ["Töltés közben a fegyvert a föld vagy az ég felé irányítjuk", "Mindig a cél felé irányítjuk", "Csak biztosított állapotban tölthető"],
             correctAnswer: "Töltés közben a fegyvert a föld vagy az ég felé irányítjuk"
         },
         {
             question: "Ismertesse az öntöltő maroklőfegyver hatásos lőtávolságát, hatásmódját.",
-            options: ["20-50 méter", "10-20 méter", "100 méter"],
+            options: ["20-50 méter", "100-150 méter", "10-20 méter"],
             correctAnswer: "20-50 méter"
         },
         {
             question: "Sorolja fel a maroklőfegyverek használata során előforduló leggyakoribb akadályokat és azok elhárításának módját.",
-            options: ["Tár nehezen tolható be, kiesik, nem zár be a szán", "Mindig töltve marad", "Csak karbantartás szükséges"],
+            options: ["Tár nehezen tolható be, kiesik, nem zár be a szán", "Csak rendszeres karbantartás szükséges", "A szán minden lövésnél megakad"],
             correctAnswer: "Tár nehezen tolható be, kiesik, nem zár be a szán"
         },
         {
             question: "Ismertesse az öntöltő maroklőfegyver karbantartásának szabályait, a karbantartás eszközeit és módját.",
-            options: ["Csőtisztító, szerkezet tisztító kefék, tisztító olajok, karbantartó olajok", "Csak vizuális ellenőrzés", "Rendszeres szétszerelés"],
+            options: ["Csőtisztító, szerkezet tisztító kefék, tisztító olajok, karbantartó olajok", "Csak vizuális ellenőrzés szükséges", "A markolat és a tár tisztítása"],
             correctAnswer: "Csőtisztító, szerkezet tisztító kefék, tisztító olajok, karbantartó olajok"
         },
         {
             question: "Ismertesse az öntöltő maroklőfegyver részleges szét- és összeszerelésének végrehajtása.",
-            options: ["A fegyver töltetlenségének ellenőrzése, szán és sátorvas kioldása", "Csak szán hátrahúzás", "Biztosítás elvégzése után tárazás"],
+            options: ["A fegyver töltetlenségének ellenőrzése, szán és sátorvas kioldása", "A lövedék eltávolítása a hüvelyből", "Csak a markolat eltávolítása szükséges"],
             correctAnswer: "A fegyver töltetlenségének ellenőrzése, szán és sátorvas kioldása"
         },
         {
             question: "Mi a különbség revolverező és nem revolverező pisztoly között?",
-            options: ["A revolver forgótáras", "Mindkettő forgótáras", "A revolver állandó lövést ad"],
+            options: ["A revolver forgótáras", "Mindkettő forgótáras", "A revolver nem használ hüvelyt"],
             correctAnswer: "A revolver forgótáras"
         },
         {
             question: "Mi a különbség merevcsövű és csőhátrasiklásos maroklőfegyver között?",
-            options: ["A merevcsövű csöve a tokhoz rögzített", "Mindkettő csöve mozog", "Csak csőhátrasiklásos létezik"],
+            options: ["A merevcsövű csöve a tokhoz rögzített", "A csőhátrasiklásos fix markolattal rendelkezik", "Csak csőhátrasiklásos létezik"],
             correctAnswer: "A merevcsövű csöve a tokhoz rögzített"
         },
         {
             question: "Ismertesse az öntöltő maroklőfegyver működési elvét, hatásadatait.",
-            options: ["Töltés, elsütés, ürítés és célzás", "Csak töltés és célzás", "Csak ürítés és lövés"],
+            options: ["Töltés, elsütés, ürítés és célzás", "Csak a töltés és az ürítés szükséges", "Csak az elsütés és a célzás szükséges"],
             correctAnswer: "Töltés, elsütés, ürítés és célzás"
         },
         {
-            question: "Ismertesse az öntöltő maroklőfegyver hatásos lőtávolságát, hatásmódját.",
+            question: "Ismertesse a pisztolylőszerek részeit.",
+            options: ["Hüvely, lövedék, gyújtó", "Csak a lövedék és a hüvely", "Csak a gyújtó és a lőpor"],
+            correctAnswer: "Hüvely, lövedék, gyújtó"
+        },
+        {
+            question: "Ismertesse az öntöltő maroklőfegyver hatásos lőtávolságát.",
             options: ["20-50 méter, 300-500 m hatás", "10-30 méter, 200 m hatás", "50-100 méter, 400 m hatás"],
             correctAnswer: "20-50 méter, 300-500 m hatás"
         },
         {
-            question: "Sorolja fel a maroklőfegyverek használata során előforduló leggyakoribb akadályokat és azok elhárításának módját.",
-            options: ["Tárcsere és karbantartás", "Csak karbantartás", "Nincs szükség karbantartásra"],
+            question: "Sorolja fel a maroklőfegyverek használata során előforduló leggyakoribb akadályokat.",
+            options: ["Tárcsere és karbantartás", "A hüvely cseréje szükséges", "Nincs szükség rendszeres karbantartásra"],
             correctAnswer: "Tárcsere és karbantartás"
         },
         {
-            question: "Ismertesse az öntöltő maroklőfegyver részleges szét- és összeszerelésének végrehajtása során követendő lépéseket.",
-            options: ["Töltetlenség ellenőrzése, szán eltávolítása, rugó eltávolítása", "Csak szán eltávolítása", "Nincs szükség szétszerelésre"],
-            correctAnswer: "Töltetlenség ellenőrzése, szán eltávolítása, rugó eltávolítása"
+            question: "Ismertesse az öntöltő maroklőfegyver karbantartásának szabályait.",
+            options: ["Csőtisztító, olajok, kefék", "Csak a csőtisztító szükséges", "Csak a markolat tisztítása szükséges"],
+            correctAnswer: "Csőtisztító, olajok, kefék"
         },
         {
-            question: "Ismertesse a maroklőfegyver töltésének és ürítésének végrehajtását.",
-            options: ["Tár behelyezése, szán hátrahúzása, ellenőrzés", "Csak tár behelyezése", "Csak szán hátrahúzása"],
-            correctAnswer: "Tár behelyezése, szán hátrahúzása, ellenőrzés"
+            question: "Ismertesse az öntöltő maroklőfegyver részleges szét- és összeszerelésének végrehajtása során követendő lépéseket.",
+            options: ["Töltetlenség ellenőrzése, szán eltávolítása, rugó eltávolítása", "A fegyver teljes szétszerelése szükséges", "Csak a tár eltávolítása szükséges"],
+            correctAnswer: "Töltetlenség ellenőrzése, szán eltávolítása, rugó eltávolítása"
         }
     ],
 
@@ -85,32 +90,32 @@ const allQuestions = {
         },
         {
             question: "Sorolja fel a leggyakrabban használatos sörétes kalibereket.",
-            options: ["12-es, 16-os, 20-as", "Csak 12-es", "Csak 20-as"],
+            options: ["12-es, 16-os, 20-as", "10-es, 15-ös, 25-ös", "18-as, 14-es, 24-es"],
             correctAnswer: "12-es, 16-os, 20-as"
         },
         {
             question: "Sörétes lőfegyver fő részei és rendeltetésük.",
-            options: ["Cső, zárszerkezet, lakatszerkezet, tusa", "Csak cső és tusa", "Csak zárszerkezet és tusa"],
+            options: ["Cső, zárszerkezet, lakatszerkezet, tusa", "Markolat, ravasz, lövedék", "Elsütőszerkezet, csappantyú, rugó"],
             correctAnswer: "Cső, zárszerkezet, lakatszerkezet, tusa"
         },
         {
             question: "A sörétes lőfegyver hatásos lőtávolsága és a sörétméret közötti összefüggés.",
-            options: ["30-40 méter a hatásos lőtávolság", "Csak 20 méterig hatásos", "100 méterig hatásos"],
+            options: ["30-40 méter a hatásos lőtávolság", "10-15 méter a hatásos lőtávolság", "50-60 méter a hatásos lőtávolság"],
             correctAnswer: "30-40 méter a hatásos lőtávolság"
         },
         {
             question: "A sörétes lőfegyver használatának biztonsági távolsága. Befolyásolja-e a kaliber?",
-            options: ["Nem befolyásolja a kaliber", "Csak a sörétméret befolyásolja", "A cső hossza a döntő"],
+            options: ["Nem befolyásolja a kaliber", "A kaliber határozza meg a távolságot", "A kaliber nem releváns biztonsági szempontból"],
             correctAnswer: "Nem befolyásolja a kaliber"
         },
         {
             question: "A sörétes lőszer részei és azok rendeltetése. Mi a gyöngygolyó és mire használható?",
-            options: ["Csappantyú, hüvelyfenék, lőpor, sörétszemek", "Csak lőpor és lövedék", "Csak csappantyú és hüvelyfenék"],
+            options: ["Csappantyú, hüvelyfenék, lőpor, sörétszemek", "Ravasz, cső, markolat", "Csak lövedék és hüvely"],
             correctAnswer: "Csappantyú, hüvelyfenék, lőpor, sörétszemek"
         },
         {
             question: "Mikor szabad a sörétes lőfegyvert megtölteni és mikor köteles üríteni?",
-            options: ["Csak a hajtás indulásakor", "Mindig töltve kell tartani", "Csak ha a vezető utasítást ad"],
+            options: ["Csak a hajtás indulásakor", "Csak a fegyver tisztításakor", "Mindig töltve kell tartani"],
             correctAnswer: "Csak a hajtás indulásakor"
         },
         {
@@ -122,43 +127,68 @@ const allQuestions = {
             question: "A sörétes lőfegyverből milyen szögben szabad lövéseket leadni?",
             options: ["45 foknál nagyobb szögben", "Csak 30 fokos szögben", "Bármilyen szögben lehet"],
             correctAnswer: "45 foknál nagyobb szögben"
+        },
+        {
+            question: "Mit jelent a sörétes lőszer kaliberjelölése, például a 16/70, 12/76 és 20/65?",
+            options: ["A fegyver kaliberét és töltényűr hosszát", "Csak a fegyver kaliberét", "Csak a töltényűr hosszát"],
+            correctAnswer: "A fegyver kaliberét és töltényűr hosszát"
+        },
+        {
+            question: "Ismertesse a sörétes lőszer részeit és azok rendeltetését.",
+            options: ["Csappantyú, hüvelyfenék, lőpor, fojtás, sörétszemek", "Csak csappantyú és hüvelyfenék", "Csak lőpor és fojtás"],
+            correctAnswer: "Csappantyú, hüvelyfenék, lőpor, fojtás, sörétszemek"
+        },
+        {
+            question: "Mikor kell a sörétes lőfegyvert megtölteni és mikor köteles üríteni?",
+            options: ["A hajtás kezdetén és áthaladásnál", "Csak a hajtás végén", "Csak a lövés előtt"],
+            correctAnswer: "A hajtás kezdetén és áthaladásnál"
+        },
+        {
+            question: "Hogyan kell a sörétes lőfegyvert tűzkész állapotba hozni, üríteni?",
+            options: ["A zárszerkezet kinyitása után a töltény behelyezése", "Csak csőtorkolat hátrahúzása", "Csak biztosítás eltávolítása"],
+            correctAnswer: "A zárszerkezet kinyitása után a töltény behelyezése"
+        },
+        {
+            question: "A sörétes lőfegyver biztonsági távolsága hogyan számolható ki?",
+            options: ["Sörét átmérője szorozva 100 méterrel", "Csak 50 méter", "Nincs biztonsági távolság"],
+            correctAnswer: "Sörét átmérője szorozva 100 méterrel"
+        },
+        {
+            question: "A sörétes lőfegyver hatásos lőtávolsága és a sörétméret közötti összefüggés?",
+            options: ["30-40 méter a sörétraj terítése miatt", "Csak 20 méterig hatásos", "Nincs összefüggés a mérettel"],
+            correctAnswer: "30-40 méter a sörétraj terítése miatt"
         }
     ],
 
     golyos: [
         {
             question: "A golyós lőfegyvert milyen célra szabad használni?",
-            options: ["Nagyvad elejtésére és sportcélra", "Csak apróvadra", "Csak önvédelmi célra"],
+            options: ["Nagyvad elejtésére és sportcélra", "Csak apróvad vadászatára", "Csak önvédelmi célra"],
             correctAnswer: "Nagyvad elejtésére és sportcélra"
         },
         {
-            question: "A golyós lőfegyverek csoportosítása cső és töltési rendszerük szerint.",
+            question: "Hogyan csoportosítjuk a golyós lőfegyvereket cső és töltési rendszerük szerint?",
             options: ["Billenő csövű és merev csövű", "Csak billenő csövű", "Csak merev csövű"],
             correctAnswer: "Billenő csövű és merev csövű"
         },
         {
-            question: "Milyen töltési rendszerű golyós lőfegyvereket ismer?",
-            options: ["Egylövetű, ismétlő, öntöltő", "Csak öntöltő", "Csak ismétlő"],
-            correctAnswer: "Egylövetű, ismétlő, öntöltő"
+            question: "Ismertesse a golyós lőfegyverek tárrendszereit.",
+            options: ["Előagytáras, középagytáras, tusatáras", "Csak középagytáras", "Csak tusatáras"],
+            correctAnswer: "Előagytáras, középagytáras, tusatáras"
         },
         {
-            question: "A golyós lőfegyverek fő részei, az elsütő és biztosító szerkezet rendeltetése, működése.",
-            options: ["Cső, tok, zárdugattyú, tusa", "Csak cső és tusa", "Csak tok és zárdugattyú"],
-            correctAnswer: "Cső, tok, zárdugattyú, tusa"
+            question: "A golyós lőfegyver csövének jellemzése",
+            options: ["A lőszer befogadása, lövedék megvezetése, célba juttatás", "Csak lövedék megvezetése", "Csak célba juttatás"],
+            correctAnswer: "A lőszer befogadása, lövedék megvezetése, célba juttatás"
         },
         {
-            question: "A golyós lőfegyverek hatásos lőtávolsága. Milyen messzire repülhet el a lövedék?",
-            options: ["Nyílt irányzékkal 80-100 m, céltávcsővel 100-150 m", "Csak 50 méterig hatásos", "Maximálisan 2000 méter"],
-            correctAnswer: "Nyílt irányzékkal 80-100 m, céltávcsővel 100-150 m"
+            question: "A golyós vadászlőfegyverek hatásos lőtávolsága nyílt irányzékkal?",
+            options: ["80 - 100 méter", "100 - 150 méter", "300 - 400 méter"],
+            correctAnswer: "80 - 100 méter"
         },
         {
-            question: "A golyós lőfegyverek csoportosítása, hüvelyük és lövedéktípusuk szerint.",
-            options: ["Peremes, süllyesztett peremű, szalagos", "Csak peremes", "Csak süllyesztett peremű"],
-            correctAnswer: "Peremes, süllyesztett peremű, szalagos"
-        },
-        {
-            question: "A golyós lőszer részei. Van-e tiltott lövedéktípus?",
-            options: ["Lövedék, töltényhüvely, lőpor, csappantyú", "Csak lőpor és lövedék", "Csak csappantyú"],
+            question: "A golyós lőszer részei.",
+            options: ["Lövedék, töltényhüvely, lőpor, csappantyú", "Csak lövedék és hüvely", "Csak lőpor és gyújtószer"],
             correctAnswer: "Lövedék, töltényhüvely, lőpor, csappantyú"
         },
         {
@@ -167,14 +197,34 @@ const allQuestions = {
             correctAnswer: "A fegyvercső átmérőjét és a lőszerhüvely hosszát"
         },
         {
-            question: "Mit jelent a huzagemelkedés és a csavarzathossz?",
-            options: ["A lövedék a csőben megtett teljes fordulata", "Csak a cső átmérője", "Csak a lövedék sebessége"],
-            correctAnswer: "A lövedék a csőben megtett teljes fordulata"
+            question: "Mit jelent a huzagemelkedés és a csavarzathossz? Mivel foglalkozik a célballisztika?",
+            options: ["A lövedék fordulatszámának és a roncsolódásának vizsgálatát", "Csak a fordulatszám vizsgálatát", "Csak a roncsolódás vizsgálatát"],
+            correctAnswer: "A lövedék fordulatszámának és a roncsolódásának vizsgálatát"
         },
         {
             question: "Hogyan kell a golyós lőfegyvert tűzkész állapotba hozni?",
             options: ["Zárdugattyú felhúzása, töltés, biztosítás", "Csak töltés", "Csak zárdugattyú felhúzása"],
             correctAnswer: "Zárdugattyú felhúzása, töltés, biztosítás"
+        },
+        {
+            question: "A golyós lőszer hüvelyeinek csoportosítása.",
+            options: ["Peremes és süllyesztett peremű", "Csak peremes", "Csak süllyesztett peremű"],
+            correctAnswer: "Peremes és süllyesztett peremű"
+        },
+        {
+            question: "Mi a külballisztika?",
+            options: ["A csőből kilépett lövedék mozgása", "Csak a lövedék sebessége", "A lövedék alakjának változása"],
+            correctAnswer: "A csőből kilépett lövedék mozgása"
+        },
+        {
+            question: "A golyós vadászlőfegyverek hatásos lőtávolsága céltávcsővel?",
+            options: ["100 - 150 méter", "300 - 500 méter", "Csak 50 méter"],
+            correctAnswer: "100 - 150 méter"
+        },
+        {
+            question: "A golyós vadászlőfegyverek biztonsági távolsága?",
+            options: ["3000 - 5000 méter", "100 - 200 méter", "1500 - 2000 méter"],
+            correctAnswer: "3000 - 5000 méter"
         }
     ]
 };
