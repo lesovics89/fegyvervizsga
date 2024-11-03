@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fegyverismereti Vizsga Teszt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fegyverismereti Vizsga Teszt</h1>
+    <div>
+        <label for="category">Válassz kategóriát:</label>
+        <select id="category" onchange="selectCategory()">
+            <option value="pisztoly">Pisztoly</option>
+            <option value="golyos">Golyós</option>
+            <option value="soretes">Sörétes</option>
+        </select>
+    </div>
+    <div id="timer">25:00</div>
+    <form id="quiz-form">
+        <div id="questions"></div>
+    </form>
+    <div id="result"></div>
+
+    <!-- Eredmény Modális ablak -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p id="modal-result"></p>
+            <div class="button-group">
+                <button onclick="startNewTest('pisztoly')">Pisztoly</button>
+                <button onclick="startNewTest('golyos')">Golyós</button>
+                <button onclick="startNewTest('soretes')">Sörétes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
