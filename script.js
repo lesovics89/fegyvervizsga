@@ -1,3 +1,84 @@
+const generalQuestions = [
+    {
+        question: "A lőfegyverismeret fontossága és a fegyvertartási engedély érvényességének ideje.",
+        options: ["A biztonságos fegyverhasználat biztosítása miatt fontos", "Nem szükséges fegyvertartási engedély", "Csak önvédelmi célból szükséges"],
+        correctAnswer: "A biztonságos fegyverhasználat biztosítása miatt fontos"
+    },
+    {
+        question: "A tűzfegyver fogalma és a fegyvertartási engedély érvényességének ideje.",
+        options: ["Lőport és lövedéket használó eszköz, érvényességi idő 5 év", "Csak lövedéket tartalmazó eszköz", "Nincs időkorlát az engedélyre"],
+        correctAnswer: "Lőport és lövedéket használó eszköz, érvényességi idő 5 év"
+    },
+    {
+        question: "A lőszer fogalma. Milyen lőfegyvert nem lehet forgalmazni és tartani?",
+        options: ["Lőszer: lövedék, hüvely, lőpor, csappantyú; katonai fegyver nem tartható", "Csak csappantyú és lövedék", "Bármilyen fegyver tartható"],
+        correctAnswer: "Lőszer: lövedék, hüvely, lőpor, csappantyú; katonai fegyver nem tartható"
+    },
+    {
+        question: "A lőfegyver megszerzésére és tartására ki kaphat engedélyt?",
+        options: ["18 éven felüli, büntetlen előéletű személy", "Csak vadászok", "Csak katonák"],
+        correctAnswer: "18 éven felüli, büntetlen előéletű személy"
+    },
+    {
+        question: "Hol, hogyan kell a lőfegyvert és a lőszert tárolni?",
+        options: ["Zárt helyiségben, elkülönítve a lőszert", "Csak a lakásban", "Bárhol tartható"],
+        correctAnswer: "Zárt helyiségben, elkülönítve a lőszert"
+    },
+    {
+        question: "Sorolja fel a tűzfegyver fődarabokat. Mi a szemrevételezési és vizsgálati tanúsítvány?",
+        options: ["Cső, zár, tusa, tanúsítvány a fegyver alkalmasságáról", "Csak a tusa és a zár", "Tanúsítvány nem szükséges"],
+        correctAnswer: "Cső, zár, tusa, tanúsítvány a fegyver alkalmasságáról"
+    },
+    {
+        question: "Mikor nem lehet a lőfegyvert szállítani, viselni, használni?",
+        options: ["Alkoholfogyasztás vagy drog hatása alatt", "Bármikor lehet", "Csak munkavégzés közben"],
+        correctAnswer: "Alkoholfogyasztás vagy drog hatása alatt"
+    },
+    {
+        question: "A lőfegyverek szállításának szabályai.",
+        options: ["Lőfegyver csak töltetlenül és lezárva szállítható", "Csak engedéllyel szállítható", "Bármikor szállítható töltve"],
+        correctAnswer: "Lőfegyver csak töltetlenül és lezárva szállítható"
+    },
+    {
+        question: "Mi a teendője, ha lőfegyverét – megszerzésére jogosultnak vagy forgalmazónak – eladta?",
+        options: ["Be kell jelenteni a hatóságnál", "Nem szükséges bejelenteni", "Csak írásos formában eladni"],
+        correctAnswer: "Be kell jelenteni a hatóságnál"
+    },
+    {
+        question: "A lőfegyver használata esetén milyen okmányokat kell az engedélyesnek magánál tartani?",
+        options: ["Engedély és személyazonosító igazolvány", "Csak a fegyvertartási engedély", "Nincs szükség okmányokra"],
+        correctAnswer: "Engedély és személyazonosító igazolvány"
+    },
+    {
+        question: "Hatósági ellenőrzéskor mi a kötelessége a lőfegyver tulajdonosának?",
+        options: ["Engedély bemutatása és azonnali együttműködés", "Csak az igazolvány felmutatása", "Az ellenőrzés megtagadása"],
+        correctAnswer: "Engedély bemutatása és azonnali együttműködés"
+    },
+    {
+        question: "Kinek adható és kinek engedhető át a lőfegyver?",
+        options: ["Csak fegyvertartási engedéllyel rendelkező személynek", "Bárkinek, aki nagykorú", "Csak családtagnak"],
+        correctAnswer: "Csak fegyvertartási engedéllyel rendelkező személynek"
+    },
+    {
+        question: "Mikor kell a lőfegyvert a vizsgálatra kijelölt szervezetnek bemutatni?",
+        options: ["Rendszeres időközönként és átalakítás után", "Csak ha elromlott", "Csak engedély hosszabbításkor"],
+        correctAnswer: "Rendszeres időközönként és átalakítás után"
+    },
+    {
+        question: "Mi a teendője, ha lőfegyverét vagy fegyvertartási engedélyét elvesztette?",
+        options: ["Azonnal jelenteni kell a hatóságnak", "Nincs teendő", "Csak egy hét után kell jelenteni"],
+        correctAnswer: "Azonnal jelenteni kell a hatóságnak"
+    },
+    {
+        question: "Milyen adatok megváltozását kell a rendőrhatóságnak bejelenteni?",
+        options: ["Név, lakcím és fegyvertartási engedély adatai", "Csak a név", "Nincs bejelentési kötelezettség"],
+        correctAnswer: "Név, lakcím és fegyvertartási engedély adatai"
+    }
+    // ... további általános kérdések ugyanilyen formátumban
+];
+
+
+
 const allQuestions = {
     pisztoly: [
         {
@@ -267,13 +348,17 @@ function startTimer() {
 }
 
 // Kérdések betöltése a választott kategóriából
+// Kérdések betöltése a választott kategóriából, beleértve az általános kérdéseket is
 function loadQuestions() {
     clearInterval(timerInterval);
     document.getElementById("questions").innerHTML = ""; // Korábbi kérdések törlése
     timer = 1500; // Időzítő újraindítása
     startTimer();
 
-    const questions = getRandomQuestions(allQuestions[selectedCategory], 25);
+    // Összefűzzük az általános kérdéseket a kiválasztott kategória kérdéseivel
+    const combinedQuestions = [...generalQuestions, ...allQuestions[selectedCategory]];
+    const questions = getRandomQuestions(combinedQuestions, 25);
+    
     totalQuestions = questions.length; // Az összes kérdés számának beállítása
     score = totalQuestions; // Kezdeti pontszám beállítása az összes kérdés számára
     const questionContainer = document.getElementById("questions");
@@ -305,6 +390,7 @@ function loadQuestions() {
         questionContainer.appendChild(questionDiv);
     });
 }
+
 
 // Válaszok ellenőrzése
 function checkAnswer(questionIndex, selectedAnswer, questionDiv, correctAnswer) {
